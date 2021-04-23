@@ -1,0 +1,31 @@
+# main.py
+import random
+red=[]
+blue=[]
+players = ['Alex', 'Barbara', 'Cole', 'Devyn', 'Eric', 'Fanny', 'George', 'Harsha', "Ignacio", "Julia"]
+
+while True:
+  team1=players[random.randint(0,len(players)-1)]
+  red.append(team1)
+  players.remove(team1)
+  team2=players[random.randint(0,len(players)-1)]
+  blue.append(team2)
+  players.remove(team2)
+  print(red)
+  print(blue)
+  print(players)
+  if len(players)==0:
+    break
+
+
+
+
+
+
+
+
+
+
+
+
+
